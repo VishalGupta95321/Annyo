@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="annyo_call_notification_channel_name">Annyo Call Notification Channel</string>
+    <string name="annyo_call_channel_description">Annyo Call</string>
+    <string name="incoming_voice_call_desc">Incoming Voice Call</string>
+    <string name="incoming_video_call">Incoming Video Call</string>
+    <string name="call_notification_answer_button_text">Answer</string>
+    <string name="call_notification_decline_button_text">Decline</string>
+    <string name="incoming_video_call_desc">Incoming Video Call</string>
+    <string name="call_notification_ongoing_voice_call_desc">Ongoing Voice Call</string>
+    <string name="call_notification_ongoing_video_call_desc">Ongoing Video Call</string>
+    <string name="call_notification_call_ringing_desc">Ringing...</string>
+    <string name="call_notification_call_connecting_desc">Connecting....</string>
+    <string name="call_notification_call_reconnecting_desc">Reconnecting....</string>
+    <string name="call_notification_call_busy_desc">Busy...</string>
+    <string name="call_notification_message_button_text">Message</string>
+    <string name="call_notification_callback_button_text">Callback</string>
+    <string name="call_notification_missed_voice_call_desc"> Missed voice call</string>
+    <string name="call_notification_missed_video_call_desc"> Missed video call</string>
+    <string name="annyo_uncategorized_channel_name">Annyo Uncategorized Notification Channel</string>
+</resources>

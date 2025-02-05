@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/build-logic" name="build-logic">
+                <projects>
+                  <project path="$PROJECT_DIR$/build-logic" />
+                  <project path="$PROJECT_DIR$/build-logic/convention" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="testRunner" value="CHOOSE_PER_TEST" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="jbr-17" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/build-logic" />
+            <option value="$PROJECT_DIR$/build-logic/convention" />
+            <option value="$PROJECT_DIR$/core" />
+            <option value="$PROJECT_DIR$/core/data" />
+            <option value="$PROJECT_DIR$/core/data/membership" />
+            <option value="$PROJECT_DIR$/core/data/profile" />
+            <option value="$PROJECT_DIR$/core/data/quiz" />
+            <option value="$PROJECT_DIR$/core/data/settings" />
+            <option value="$PROJECT_DIR$/core/datastore" />
+            <option value="$PROJECT_DIR$/core/domain" />
+            <option value="$PROJECT_DIR$/core/domain/membership" />
+            <option value="$PROJECT_DIR$/core/domain/profile" />
+            <option value="$PROJECT_DIR$/core/domain/setting" />
+            <option value="$PROJECT_DIR$/core/firebase_service" />
+            <option value="$PROJECT_DIR$/core/network" />
+            <option value="$PROJECT_DIR$/core/notification" />
+            <option value="$PROJECT_DIR$/core/signal_service" />
+            <option value="$PROJECT_DIR$/core/ui" />
+            <option value="$PROJECT_DIR$/core/utils" />
+            <option value="$PROJECT_DIR$/features" />
+            <option value="$PROJECT_DIR$/features/auth_feature" />
+            <option value="$PROJECT_DIR$/features/auth_feature/auth_data" />
+            <option value="$PROJECT_DIR$/features/auth_feature/auth_domain" />
+            <option value="$PROJECT_DIR$/features/auth_feature/auth_presentation" />
+            <option value="$PROJECT_DIR$/features/call_feature" />
+            <option value="$PROJECT_DIR$/features/call_feature/call_data" />
+            <option value="$PROJECT_DIR$/features/call_feature/call_domain" />
+            <option value="$PROJECT_DIR$/features/call_feature/call_presentation" />
+            <option value="$PROJECT_DIR$/features/chat_feature" />
+            <option value="$PROJECT_DIR$/features/chat_feature/chat_presentation" />
+            <option value="$PROJECT_DIR$/features/find_match_feature" />
+            <option value="$PROJECT_DIR$/features/find_match_feature/find_match_presentation" />
+            <option value="$PROJECT_DIR$/features/like_feature" />
+            <option value="$PROJECT_DIR$/features/like_feature/like_presentation" />
+            <option value="$PROJECT_DIR$/features/matches_feature" />
+            <option value="$PROJECT_DIR$/features/matches_feature/matches_presentation" />
+            <option value="$PROJECT_DIR$/features/membership_feature" />
+            <option value="$PROJECT_DIR$/features/membership_feature/membership_presentation" />
+            <option value="$PROJECT_DIR$/features/notification_feature" />
+            <option value="$PROJECT_DIR$/features/notification_feature/notification_presentation" />
+            <option value="$PROJECT_DIR$/features/onboarding_feature" />
+            <option value="$PROJECT_DIR$/features/onboarding_feature/onboarding_presentation" />
+            <option value="$PROJECT_DIR$/features/profile_feature" />
+            <option value="$PROJECT_DIR$/features/profile_feature/profile_presentation" />
+            <option value="$PROJECT_DIR$/features/quiz_feature" />
+            <option value="$PROJECT_DIR$/features/quiz_feature/quiz_presentation" />
+            <option value="$PROJECT_DIR$/features/setting_feature" />
+            <option value="$PROJECT_DIR$/features/setting_feature/setting_presentation" />
+            <option value="$PROJECT_DIR$/features/settings_feature" />
+            <option value="$PROJECT_DIR$/features/settings_feature/setting_presentation" />
+          </set>
+        </option>
+        <option name="resolveExternalAnnotations" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

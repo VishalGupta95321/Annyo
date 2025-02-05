@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Annyo</string>
+    <string name="call_service_description">phone call service</string>
+</resources>

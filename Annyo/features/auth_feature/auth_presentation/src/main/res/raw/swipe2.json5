@@ -1,0 +1,40 @@
+{
+  ConstraintSets: {
+    start: {
+      card: {
+        width: 400,
+        height: 800,
+        start: ['parent', 'start', 0],
+        end: ['parent', 'end', 0],
+        top: ['parent', 'top', 0],
+        bottom: ['parent', 'bottom', 0],
+        translationX: 0
+      },
+    },
+    end: {
+      card: {
+        width: 600,
+        height: 900,
+        start: ['parent', 'start', 0],
+        end: ['parent', 'end', 0],
+        top: ['parent', 'top', 0],
+        bottom: ['parent', 'bottom', 0],
+        translationX: -1900,
+        rotationZ: -40,
+        visibility: 'gone',
+      },
+    },
+  },
+  Transitions: {
+    default: {
+      from: 'start',
+      to: 'end',
+      onSwipe: {
+        anchor: 'card',
+        direction: 'left',
+        side: 'right',
+        touchUp: 'autoComplete'
+      },
+    },
+  }
+}

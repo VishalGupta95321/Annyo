@@ -1,0 +1,50 @@
+{
+  ConstraintSets: {
+    start: {
+      dislike_button: {
+        start: ['parent', 'start'],
+        top: ['parent', 'top'],
+        end: ['dislike_button2', 'start', 0],
+        bottom: ['parent', 'bottom', 0],
+      },
+      dislike_button2: {
+        start: ['dislike_button', 'end'],
+        top: ['parent', 'top'],
+        end: ['parent', 'end', 0],
+        bottom: ['parent', 'bottom', 0],
+      }
+    },
+    end: {
+      dislike_button: {
+        start: ['parent', 'start'],
+        top: ['parent', 'top'],
+        end: ['dislike_button2', 'start', 0],
+        bottom: ['parent', 'bottom', 0],
+      },
+      dislike_button2: {
+        start: ['dislike_button', 'end'],
+        top: ['parent', 'top'],
+        end: ['parent', 'end', 0],
+        bottom: ['parent', 'bottom', 0],
+      }
+    },
+  },
+  Transitions: {
+    default: {
+      from: 'start',
+      to: 'end',
+      pathMotionArc: 'startHorizontal',
+      KeyFrames: {
+        KeyAttributes: [
+          {
+            target: ['dislike_button'],
+            frames: [0, 70, 100],
+            scaleX: [1, 1, 3],
+            scaleY: [1, 1, 3],
+            translationY: [0, 0, 10],
+          }
+        ]
+      }
+    }
+  }
+}

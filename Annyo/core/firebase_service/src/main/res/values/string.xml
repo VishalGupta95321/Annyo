@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Client_ID">1059376879610-fl04qfh5c70l900uvhftcj95ctofpjs8.apps.googleusercontent.com</string> <!-- add this in local properties
+    or we can also create our own properties file.
+    use BuildConfig as used in nowinandroid or in phillip lackner video
+    -->
+</resources>

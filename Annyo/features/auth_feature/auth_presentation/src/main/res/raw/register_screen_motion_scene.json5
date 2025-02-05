@@ -1,0 +1,85 @@
+{
+  ConstraintSets: {
+    start: {
+      box: {
+        start: ['parent', 'start', 0],
+        end: ['parent', 'end', 0],
+        top: ['parent', 'top', 0],
+        bottom: ['parent', 'bottom', 0],
+      },
+      background_image: {
+        visibility: 'gone',
+        start: ['parent', 'start', 0],
+        end: ['parent', 'end', 0],
+        top: ['parent', 'top', 30],
+        bottom: ['parent', 'bottom', 0],
+      },
+      logo: {
+        start: ['parent', 'start', 0],
+        end: ['parent', 'end', 0],
+        top: ['parent', 'top', 15],
+        bottom: ['parent', 'bottom', 0],
+      },
+      phone_login_button: {
+        start: ['parent', 'start', 0],
+        end: ['parent', 'end', 0],
+        bottom: ['parent', 'bottom',10],
+        translationY: 3000
+      },
+      google_login_button: {
+        start: ['parent', 'start', 0],
+        end: ['parent', 'end', 0],
+        bottom: ['parent', 'bottom',30],
+        translationY: 6000
+      },
+    },
+
+    end: {
+      box: {
+        width: 'wrap',
+        height: 'wrap',
+        start: ['parent', 'start', 0],
+        end: ['parent', 'end', 0],
+        top: ['parent', 'top', 0],
+        bottom: ['parent', 'bottom', 0],
+      },
+      background_image: {
+        start: ['parent', 'start', 0],
+        end: ['parent', 'end', 0],
+        top: ['parent', 'top', 30],
+        bottom: ['parent', 'bottom', 0],
+      },
+
+      logo: {
+        start: ['parent', 'start', 0],
+        end: ['parent', 'end', 0],
+        top: ['parent', 'top', 15],
+      },
+      phone_login_button: {
+        start: ['parent', 'start', 0],
+        end: ['parent', 'end', 0],
+        bottom: ['google_login_button', 'top',10],
+      },
+      google_login_button: {
+        start: ['parent', 'start', 0],
+        end: ['parent', 'end', 0],
+        bottom: ['parent', 'bottom',30],
+      }
+    },
+  },
+    Transitions: {
+      default: {
+        from: 'start',
+        to: 'end',
+        KeyFrames: {
+          KeyAttributes: [
+            {
+              target: ['box','background_image','google_login_button','phone_login_button'],
+              frames: [0,89,90,100],
+              alpha: [0,0,1,1]
+            },
+          ]
+        }
+      },
+    }
+}

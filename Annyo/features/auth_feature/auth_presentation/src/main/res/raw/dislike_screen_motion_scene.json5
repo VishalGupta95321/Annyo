@@ -1,0 +1,42 @@
+{
+  ConstraintSets: {
+    start: {
+      box: {
+        width: 80,
+        height: 80,
+        start: ['parent', 'start'],
+        top: ['parent', 'top'],
+        end: ['parent', 'end'],
+        bottom: ['parent', 'bottom'],
+      },
+      logo: {
+        width: 70,
+        height: 70,
+        start: ['parent', 'start',10],
+        top: ['parent', 'top',10],
+        end: ['parent', 'end',10],
+        bottom: ['parent', 'bottom',10],
+      },
+    },
+    end: {
+      box: {
+        width: 'spread',
+        height: 'spread',
+        start: ['parent', 'start'],
+        top: ['parent', 'top'],
+        end: ['parent', 'end'],
+        bottom: ['parent', 'bottom'],
+        scaleY: 1.3,
+        scaleX: 1.3,
+      },
+      logo: {
+        width: 150,
+        height: 150,
+        start: ['parent', 'start'],
+        top: ['parent', 'top'],
+        end: ['parent', 'end'],
+        bottom: ['parent', 'bottom'],
+      },
+    },
+  },
+}

@@ -1,0 +1,224 @@
+{
+  ConstraintSets: {
+    start: {
+      box: {
+        width: 0,
+        height: 0,
+        start: ['parent', 'start'],
+        top: ['parent', 'top'],
+        end: ['parent', 'end'],
+        bottom: ['parent', 'bottom'],
+        visibility: 'gone',
+      },
+      label: {
+        start: ['parent', 'start'],
+        top: ['parent', 'top',20],
+        end: ['parent', 'end'],
+        visibility: 'gone'
+      },
+      image1: {
+        width: 350,
+        height: 500,
+        start: ['parent', 'start'],
+        top: ['parent', 'top'],
+        end: ['parent', 'end'],
+        bottom: ['parent', 'bottom'],
+        visibility: 'gone',
+      },
+      image2: {
+        width: 350,
+        height: 500,
+        start: ['parent', 'start'],
+        top: ['parent', 'top'],
+        end: ['parent', 'end'],
+        bottom: ['parent', 'bottom'],
+        visibility: 'gone'
+      },
+      logo: {
+        width: 80,
+        height: 80,
+        start: ['parent', 'start',10],
+        top: ['parent', 'top',10],
+        end: ['parent', 'end',10],
+        bottom: ['parent', 'bottom',10],
+        visibility: 'gone',
+      },
+      message_text_field: {
+        start: ['parent', 'start'],
+        end: ['parent', 'end'],
+        bottom: ['share_button', 'top',15],
+        visibility: 'gone'
+      },
+      share_button: {
+        start: ['back_button', 'end'],
+        end: ['parent', 'end',13],
+        bottom: ['parent', 'bottom',70],
+        visibility: 'gone'
+      },
+      back_button: {
+        start: ['parent', 'start',13],
+        end: ['share_button', 'start'],
+        bottom: ['parent', 'bottom',70],
+        visibility: 'gone'
+      }
+    },
+    medium: {
+      box: {
+        width: 'spread',
+        height: 'spread',
+        start: ['parent', 'start'],
+        top: ['parent', 'top'],
+        end: ['parent', 'end'],
+        bottom: ['parent', 'bottom'],
+        scaleY: 1.5,
+        scaleX: 1.5
+      },
+      label: {
+        start: ['parent', 'start'],
+        top: ['parent', 'top',20],
+        end: ['parent', 'end'],
+      },
+      image1: {
+        width: 350,
+        height: 500,
+        start: ['parent', 'start'],
+        top: ['parent', 'top'],
+        end: ['parent', 'end'],
+        bottom: ['parent', 'bottom'],
+        visibility: 'gone',
+      },
+      image2: {
+        width: 350,
+        height: 500,
+        start: ['parent', 'start'],
+        top: ['parent', 'top'],
+        end: ['parent', 'end'],
+        bottom: ['parent', 'bottom'],
+        visibility: 'gone'
+      },
+      logo: {
+        width: 200,
+        height: 200,
+        start: ['parent', 'start'],
+        top: ['parent', 'top'],
+        end: ['parent', 'end'],
+        bottom: ['parent', 'bottom'],
+      },
+      message_text_field: {
+        start: ['parent', 'start'],
+        end: ['parent', 'end'],
+        bottom: ['share_button', 'top',15],
+      },
+      share_button: {
+        start: ['back_button', 'end'],
+        end: ['parent', 'end',13],
+        bottom: ['parent', 'bottom',70],
+      },
+      back_button: {
+        start: ['parent', 'start',13],
+        end: ['share_button', 'start'],
+        bottom: ['parent', 'bottom',70],
+      }
+    },
+    end: {
+      box: {
+        width: 'spread',
+        height: 'spread',
+        start: ['parent', 'start'],
+        top: ['parent', 'top'],
+        end: ['parent', 'end'],
+        bottom: ['parent', 'bottom'],
+        visibility: 'visible',
+        scaleY: 1.5,
+        scaleX: 1.5
+      },
+      label: {
+        start: ['parent', 'start'],
+        top: ['parent', 'top',20],
+        end: ['parent', 'end'],
+        visibility: 'visible'
+      },
+      image1: {
+        width: 190,
+        height: 290,
+        start: ['parent', 'start'],
+        top: ['parent', 'top'],
+        end: ['parent', 'end'],
+        bottom: ['parent', 'bottom'],
+        visibility: 'visible',
+        translationX: -190,
+        translationY: -200,
+        rotationZ: -15,
+      },
+      image2: {
+        width: 190,
+        height: 290,
+        start: ['parent', 'start'],
+        top: ['parent', 'top'],
+        end: ['parent', 'end'],
+        bottom: ['parent', 'bottom'],
+        visibility: 'visible',
+        translationX: 190,
+        translationY: -200,
+        rotationZ: 15
+      },
+      logo: {
+        width: 150,
+        height: 250,
+        start: ['parent', 'start'],
+        top: ['parent', 'top'],
+        end: ['parent', 'end'],
+        bottom: ['parent', 'bottom'],
+        translationY: 200,
+        visibility: 'visible'
+      },
+      message_text_field: {
+        start: ['parent', 'start'],
+        end: ['parent', 'end'],
+        bottom: ['share_button', 'top', 10],
+        visibility: 'visible'
+      },
+      share_button: {
+        start: ['back_button', 'end'],
+        end: ['parent', 'end',13],
+        bottom: ['parent', 'bottom',70],
+        visibility: 'visible'
+      },
+      back_button: {
+        start: ['parent', 'start',13],
+        end: ['share_button', 'start'],
+        bottom: ['parent', 'bottom',70],
+        visibility: 'visible'
+      }
+    },
+  },
+
+  Transitions: {
+    user_liked: {
+      from: 'start',
+      to: 'medium',
+      KeyFrames: {
+        KeyAttributes: [
+          {
+            target: ['label','share_button','back_button','message_text_field'],
+            frames: [0,100],
+            alpha: [0,0]
+          }
+        ]
+      }
+    },
+    default: {
+      from: 'start',
+      to: 'end',
+      KeyFrames: {
+        KeyAttributes: [
+          {
+            target: ['label','share_button','back_button','message_text_field'],
+            frames: [0,99,100],
+            alpha: [0,0,1]
+          },
+        ]
+      }
+    }
+  }
+}

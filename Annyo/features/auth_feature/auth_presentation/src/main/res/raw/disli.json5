@@ -1,0 +1,45 @@
+{
+  ConstraintSets: {
+    start: {
+      dislike_screen: {
+        start: ['parent', 'start'],
+        top: ['parent', 'top'],
+        width: 0,
+        height: 0,
+        custom: {
+          corner_radius: 1000,
+        },
+      },
+    },
+    end: {
+      dislike_screen: {
+        start: ['parent', 'start'],
+        top: ['parent', 'top'],
+        width: 'wrap',
+        height: 'wrap',
+        custom: {
+          corner_radius: 0,
+        },
+      }
+    },
+  },
+  Transitions: {
+    default: {
+      from: 'start',
+      to: 'end',
+      pathMotionArc: 'startHorizontal',
+      duration: 500,
+      KeyFrames: {
+        KeyAttributes: [
+          {
+            target: ['dislike_screen'],
+            frames: [0, 99, 100],
+//            scaleX: [1, 1, 3],
+//            scaleY: [1, 1, 3],
+          }
+        ]
+      }
+    }
+  }
+}
+
